@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <title>Deutsch101 | Register</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" type="text/css" href=""> -->
+</head>
+<body>
+  <div class="wrapper">
+    <div class="nav">
+      <div class="logo">
+        Deutsch101 | Learn German, Master German
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./reviews.html">Reviews</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <body>
+    <div class="regcontainer">
+      <h1 class="reghead">Course Registration</h1>
+      <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+          <option value="course1">Course 1</option>
+          <option value="course2">Course 2</option>
+          <option value="course3">Course 3</option>
+        </select>
+        <button class="registerbtn" type="submit" id="register-btn">Register</button>
+      </form>
+      <div id="login-form">
+        <h2>Login</h2>
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="login-email" required>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required>
+        <button type="submit" id="login-btn">Login</button>
+      </div>
+      <div id="payment-form">
+        <h2>Payment</h2>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required>
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" id="expiry-date" name="expiry-date" required>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+        <button type="submit" id="pay-btn">Pay</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

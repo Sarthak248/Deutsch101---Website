@@ -1,0 +1,424 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body{
+	width: 100%;
+	height:  100vh;
+	background: url(BG.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: table;
+	font-family: Montserrat;
+}
+
+.nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo{
+	letter-spacing: 1px;
+	float: left;
+	color: #80ff00;
+	font-size: 24px;
+	line-height: 80px;
+	padding: 0 6em;
+}
+
+.menu{
+	float: right;
+	line-height: 50px;
+	margin: 0 6em;
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu ul li{
+	display: inline-block;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	font-family: "Oswald", serif;
+	color: #80ff00;
+	font-size: 24px;
+	font-weight: lighter;
+	padding: 0 15px;
+	position: relative;
+}
+
+.menu ul li a::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 0%;
+	height: 4px;
+	background-color: #000000;
+	transition: width 0.7s ease-in-out;
+}
+
+/*.menu ul li a:hover::before{
+	transition: 0.6s;
+	width:  90%;
+	left: 0.8;
+}
+*/
+.menu ul li a:hover{
+	transition: 0.6s;
+	color: #e6ffee;
+}
+
+
+
+ /****** COMMON ENDS ******/
+
+.header{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.header h1{
+	color: #e6ffcc;
+	font-size: 45px;
+	font-weight: 700;
+	margin-bottom: 8px;
+	padding-bottom: 85px;
+}
+
+/*.header p{
+	color: #fff;
+	font-size: 24px;
+	font-weight: lighter;
+
+}*/
+
+.register{
+	width: 50%;
+	transform: translate(0%, -50%);
+	background: none;
+	color: #e6ffcc;
+	font-weight: 400;
+	width: 240px;
+	height: 80px;
+	border: 1px solid #e6ffcc;
+	border-width: 5;
+	font-size: 18px;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+
+}
+
+.register:focus{
+	outline:  none;
+}
+
+.register:before{
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.5);
+	width: 60px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translateX(-130px) skewX(-15deg);
+}
+
+.register:after{
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.2);
+	width:  30px;
+	height: 100%;
+	left: 30px;
+	top: 0;
+	opacity: 0;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
+}
+
+.register:hover{
+	color: #29293d;
+	font-weight: 500;
+	background: #e6ffcc;
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.register:hover:before{
+	transform: translateX(300px) skewX(-15deg);
+	opacity: .6;
+	transition: .5s;
+}
+
+.header button:hover:after{
+	transform: translateX(300px) skewX(-15deg);
+	opacity: .8;
+	transition: .5s;
+}
+/*     *********** COURSES ************************** */
+
+.course-container {
+
+	margin-top: 8%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.course {
+	background-color: #f2ffe6;
+	opacity: 0.6;
+	border-radius: 12px;
+	padding: 10px;
+	margin: 10px;
+	width: 30%;
+	text-align: center;
+}
+
+.course h2 {
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.course ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.course li {
+	padding: 10px;
+	font-size: 24px;
+}
+
+.course p.price {
+	font-size: 27px;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+
+.course:hover{
+transition: 0.6s;
+	opacity: 0.9;
+}
+
+/*******CONTACT US ************/
+.contact-form {
+	margin-top: 10%;
+	margin-left: 3%;
+	padding: 20px;
+	background-color: #f1f1f1;
+	width: 90%;
+	height: 70%;
+	opacity: 0.8;
+}
+
+.contact-form h2 {
+	margin-top: 0;
+}
+
+.form-group {
+	margin: 10px 0;
+}
+
+.form-group label {
+	display: block;
+}
+
+.form-group input,
+.form-group textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 70%;
+}
+
+.form-group textarea {
+	height: 100%;
+}
+
+.btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	transition: 0.6s;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #333;
+}
+
+/*****************REVIEWS******************/
+#reviews {
+  margin-bottom: 20px;
+}
+
+.review {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review h3 {
+  margin-top: 0;
+}
+
+.review p {
+  margin-bottom: 0;
+}
+
+
+/************ABOUT****************/
+.section1 {
+  margin-top: 8%;
+  margin-left: 2%; 
+  margin-right: 1%;
+  display: flex;
+  align-items: center;
+
+  background-color: #e6e6ff;
+  opacity: 0.8;
+  border-radius: 12px;
+}
+
+.section2 {
+  margin-top: 4%;
+  margin-left: 2%; 
+  margin-right: 1%;
+  display: flex;
+  align-items: center;
+
+  background-color: #e6e6ff;
+  opacity: 0.8;
+  border-radius: 12px;
+  height: 30i%;
+}
+
+.section1:hover{
+transition: 0.6s;
+	opacity: 1;
+}
+
+.section2:hover{
+transition: 0.6s;
+	opacity: 1;
+}
+
+.circle-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 1%;
+  border: 3px solid;
+}
+
+.description {
+  flex: 1;
+}
+
+.abouthead {
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: #000066;
+}
+
+.aboutp {
+  color: #000000;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/************REGISTER*****************/
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.regcontainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reghead{
+  margin-top: 16%;
+  text-align: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.registerbtn{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registerbtn:hover {
+  background-color: #3e8e41;
+}
+
+#login-form, #payment-form {
+  display: none;
+}
+
+#login-form h2, #payment-form h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.payment-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
