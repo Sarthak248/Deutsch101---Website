@@ -100,9 +100,9 @@ body{
 
 
 .signin{
-	margin-top: 20%;
+	margin-top: 22%;
 	margin-left: 42%;
-	padding-left: 1.5%;
+	padding-left: 1%;
 
 	width: 10%;
 	align-self: center;
@@ -116,13 +116,12 @@ body{
 	font-size: 18px;
 	border-radius: 4px;
 	transition: .6s;
-	overflow: hidden
+	overflow: hidden;
 }
 
-.al
-.signin:hover{
+.signin:hover:after{
 	transition: 0.5s;
-	color: #ffffff;
+	color: #000000;
 }
 
 
