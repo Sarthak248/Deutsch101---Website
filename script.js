@@ -156,13 +156,14 @@
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   // $("#name").text(profile.getName());  
-  // $(".data").css("display","block");
-  // $("g-signin2").css("display","none");
+  $(".maintext").css("display","block");
+  $(".g_id_signin").css("display","none");
   // console.log(googleUser);
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+
 }
 
 function onLoad() {
@@ -178,3 +179,10 @@ function signOut(){
     	$(".data").css("display","none");
     });
 }
+
+// window.gapi.client
+//         .init({
+//           clientId:'247825906165-pj4h7o9d997mplbvouri0b5d7m12aeh9.apps.googleusercontent.com',
+//           scope: "email",
+//           plugin_name:'Deutsch101'
+//         })
